@@ -13,6 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { ElectronService } from './providers/electron.service';
 
+// Angular Material
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdMenuModule, MdButtonModule } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,9 +26,13 @@ import { ElectronService } from './providers/electron.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MdMenuModule,
+    MdButtonModule
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
